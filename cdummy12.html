@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals macha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/c9ac1c4a41.js" crossorigin="anonymous"></script>
+    <style>
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 100px;
+    background-color: teal;
+    color: white ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height:100px;
+    width: 100px;
+}
+
+.logo{
+    background-image:url("deals .jpg") ;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+}
+
+.border {
+    border: 3px solid transparent;
+}
+
+.border:hover{
+    border: 3px solid white;
+}
+
+/** box2 **/
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+
+}
+
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/** box3**/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(0, 157, 255);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/** box4 **/
+
+span{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.nav-second{
+    font-size: 0.85rem;
+}
+
+/** panel **/
+.panel-ops{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Add this to your existing styles */
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Dropdown items */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+}
+
+/* Show the dropdown when hovering over the container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: teal;
+}
+
+
+
+/** hero section **/
+.hero-section{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/KSD/Deals-PC-3000-Unrec._CB577064215_.jpg");
+    background-size: cover;
+    height: 350px;    
+}
+
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Food section **/
+.Food-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+
+.box{
+   /* border: 2px solid black; */
+    height: 400px ;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 5px;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.box-content p{
+    color: #007185;
+}
+
+/** footer **/
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+}
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+.social-icons{
+color:#fff;
+text-align:center;
+padding:30px;
+}
+.fa-brands{
+padding:20px;
+font-size:20px;
+width:20px;
+text-align:center;
+text-decoration:none;
+margin:5px 2px;
+}
+.fa-brands:hover{
+opacity:0.7;
+}
+.fa-solid{
+font-size:20px;
+
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo" ></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first"> Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second"> Tirupati</p>
+                </div>
+
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option> All </option>
+                </select>
+                <input id="search-input" placeholder="Search here macha" class="search-input">
+                <div class="search-icon" id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+                
+            </div>
+
+            <div class="nav-signin">
+                <p><span> You</span></p>
+                <p class="nav-second">Rs.0</p>
+    
+            </div>
+            
+
+        </div>
+
+       <div class="panel-ops">
+       <div class="dropdown">
+    <p>Categories</p>
+    <div class="dropdown-content">
+        <!-- Add your menu items here -->
+        <a href="food.html"><i class="fa-solid fa-utensils"></i>Food & Dining</a>
+        <a href="fashion.html"><i class="fa-solid fa-shirt"></i>Fashion</a>
+        
+    </div>
+</div>
+
+<div class="dropdown">
+    <p>Top Stores</p>
+    <div class="dropdown-content">
+        <!-- Add your menu items here -->
+        <a href="#">Store 1</a>
+        <a href="#">Store 2</a>
+        <a href="#">Store 3</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <p>Best Offers</p>
+    <div class="dropdown-content">
+        <!-- Add your menu items here -->
+        <a href="#">Miverva</a>
+        <a href="#">Hush puppies 2</a>
+        <a href="#">Paradise</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <p>Collections</p>
+    <div class="dropdown-content">
+        <!-- Add your menu items here -->
+        <a href="#">Menu Item 1</a>
+        <a href="#">Menu Item 2</a>
+        <a href="#">Menu Item 3</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <p>Share & Earn</p>
+    <div class="dropdown-content">
+        <!-- Add your menu items here -->
+        <a href="#">Menu Item 1</a>
+        <a href="#">Menu Item 2</a>
+        <a href="#">Menu Item 3</a>
+    </div>
+</div>
+            
+        
+
+    </header>
+
+    <div id="hero-section" class="hero-section">
+        <div class="hero-msg">
+            <P>Welcome to Deals macha - India's Trusted Coupons, Offers & Cashback Website</P>
+        </div>
+
+    </div>
+    
+    <div class="Food-section">
+        <div id="veg-section" class="box1 box">
+            <div class="box-content">
+                <h2>Veg</h2>
+                
+                <a href="cdummy.html">
+        <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-LTNikvWBHoz8FdXJq9LeWQ0F_PIcfaRdjg&usqp=CAU');"></div>
+    </a>
+                <p>see more</p>
+            </div>
+        </div>
+        <div id="non-veg-section" class="box2 box">
+            <div class="box-content">
+            <h2>Non-veg</h2>
+
+           <a href="cdummy1.html">
+            <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqHbZf4-uQDjSNgVBRNAQmrlGDiRbD0mmsA&usqp=CAU');"></div>
+           </a>
+            <p>see more</p>
+
+        </div>
+        </div>
+        <div id="mocktails-section" class="box3 box">
+            
+            <h2>Mocktails</h2>
+            <a href="cdummy2.html">
+            <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Xh8NEYLEQLsNo30rJDicQbNbVuOwV3-sjg&usqp=CAU');"></div>
+            </a>
+            <p>see more</p>
+
+        </div>
+        <div id="beverages-section" class="box4 box">
+            
+            <h2>Beverages</h2>
+            <a href="cdummy3.html">
+            <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZn2aCFORdv3piXjOs6vsjONSGyR2PZnJhGA&usqp=CAU');"></div>
+            </a>  
+            <p>see more</p>
+        </div>
+
+        <div id="womens-clothing-section"class="box4 box">
+            
+            <h2>Womens clothing</h2>
+            <a href="cdummy4.html">
+            <div class="box-img" style="background-image: url('https://sslimages.shoppersstop.com/sys-master/root/h0d/hf8/30938031521822/Main-Banner-web-kashish_47685843.jpg');"></div>
+            </a>
+            <p>see more</p>
+        </div>
+
+        <div id="mens-clothing-section" class="box4 box">
+            
+            <h2>Mens clothing</h2>
+            <a href="cdummy5.html">
+            <div class="box-img" style="background-image: url('https://sslimages.shoppersstop.com/sys-master/root/hbe/h8f/30847042453534/top-banners-web-Stop-%26-life_Aw--23.jpg');"></div>
+            </a>
+            <p>see more</p>
+        </div>
+
+        <div id="kids-wear-section" class="box4 box">
+            
+            <h2>Kids wear</h2>
+            <a href="cdummy7.html">
+            <div class="box-img" style="background-image: url('https://static.hopscotch.in/fstatic/product/202309/62359c6f-4589-4aac-8c95-6d5b27612cfd_full.jpg?version=1695978789401&tr=w-480,c-at_max,dpr-2,n-medium');"></div>
+             </a>
+            <p>see more</p>
+        </div>
+
+        <div id="footwear-section" class="box4 box">
+            
+            <h2>Footwear</h2>
+            <a href="cdummy8.html">
+            <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHfgHkvjcJgWNO849kZloKCgC5B49N5ezVsA&usqp=CAU');"></div>
+            </a>
+            <p>see more</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            <button id="backToTopButton">Back to Top</button>
+ 
+        </div>
+        <div class="foot-panel2">
+            <ul>                                                   
+                <p>Help & Support</p>
+                <a>FAQs</a>
+                 <a> How It Works</a>
+                 <a> Missing Cashback Claims</a>
+            </ul>
+
+            <ul>
+                <p>Deals macha</p>
+                <a href="about.html">About us</a>
+                 <a href="privacy.html"> Privacy Policy</a>
+                 <a href="tc.html"> Terms & Conditions</a>
+
+            </ul>
+            <ul>
+                <p>Earning Program & Benfits</p>
+                <a>Shopping Assistant</a>
+                <a>Share & Earn</a>
+                <a>Refer & Earn</a>
+            </ul>
+        
+      <div class="social-icons">
+<ul>
+<p>Follow Us</p>
+<a href="" class="fa-brands fa-facebook"></a>
+<a href="https://www.instagram.com/deals_macha/"class="fa-brands fa-instagram"></a>
+<a href="#"class="fa-brands fa-twitter"></a>
+<a href="#"class="fa-brands fa-linkedin"></a>
+</ul>
+<div>
+</div>
+    </footer>
+    <script>
+
+const backToTopButton = document.getElementById("backToTopButton");
+
+// Add a click event listener to the button
+backToTopButton.addEventListener("click", () => {
+    // Scroll the page to the top smoothly
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+function scrollToSection(keyword) {
+        const sectionId = keyword.toLowerCase() + "-section";
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
+    // Add an event listener to the search input element
+    const searchInput = document.getElementById("search-input");
+    searchInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            const searchKeyword = searchInput.value.trim();
+            scrollToSection(searchKeyword);
+            // Clear the search input after scrolling
+            searchInput.value = "";
+        }
+    });
+
+const searchIcon = document.querySelector(".search-icon");
+
+// Add a click event listener to the search icon
+searchIcon.addEventListener("click", () => {
+    // Get the search keyword from the input field
+    const searchKeyword = searchInput.value.trim().toLowerCase();
+
+    // Define a mapping from search keywords to section IDs
+    const sectionMapping = {
+        "veg": "veg-section",
+        "non veg": "non-veg-section",
+        "mocktails": "mocktails-section",
+        "beverages": "beverages-section",
+        "women's clothing": "womens-clothing-section",
+        "men's clothing": "mens-clothing-section",
+        "kids wear": "kids-wear-section",
+        "footwear": "footwear-section",
+    };
+
+    // Check if the search keyword exists in the mapping
+    if (sectionMapping.hasOwnProperty(searchKeyword)) {
+        // Get the corresponding section ID
+        const sectionId = sectionMapping[searchKeyword];
+
+        // Scroll to the specified section smoothly
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
+    // Clear the search input after scrolling
+    searchInput.value = "";
+});
+
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("click", () => {
+        const heroSection = document.getElementById("hero-section");
+        heroSection.style.display = "none";
+    });
+});
+
+
+</script>
+
+</body>
+</html>
